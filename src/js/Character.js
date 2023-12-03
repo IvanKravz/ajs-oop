@@ -4,8 +4,8 @@ export default class Character {
         this.type = type;
         this.health = 100;
         this.level = 1;
-        this.attack = undefined;
-        this.defence = undefined;
+        this.attack = null;
+        this.defence = null;
         const typeHeroes = [
             'Bowman', 
             'Swordsman', 
