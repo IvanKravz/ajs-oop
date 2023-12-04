@@ -7,6 +7,3 @@ export default class Undead extends Character {
         this.defence = 25;
     }
 }
-
-// const Petr = new Undead('Petr', 'Undead')
-// console.log(Petr)

@@ -1,11 +1,5 @@
 export default class Character {
     constructor(name, type) {
-        this.name = name;
-        this.type = type;
-        this.health = 100;
-        this.level = 1;
-        this.attack = null;
-        this.defence = null;
         const typeHeroes = [
             'Bowman', 
             'Swordsman', 
@@ -26,16 +20,23 @@ export default class Character {
         if (!typeHeroes.includes(type)) {
             throw new Error(`Тип героя ${type} отсутствует в списке ${typeHeroes.join(', ')}`);
         }
+
+        this.name = name;
+        this.type = type;
+        this.health = 100;
+        this.level = 1;
+        this.attack = null;
+        this.defence = null;
     }
 
     levelUp() {
-        if (this.health > 0) {
+        if (this.health === 0) {
+            throw new Error('Нельзя повысить левел умершего');
+        } else {
             this.level += 1;
             this.attack *= 1.2;
             this.defence *= 1.2;
             this.health = 100;
-        } else {
-            throw new Error('Нельзя повысить левел умершего');
         }
     }
 

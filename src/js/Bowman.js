@@ -7,9 +7,3 @@ export default class Bowman extends Character {
         this.defence = 25;
     }
 }
-
-// const Ivan = new Bowman('Ivan', 'Bowman')
-// Ivan.levelUp()
-// Ivan.damage(40)
-// Ivan.damage(30)
-// console.log(Ivan)

@@ -7,6 +7,3 @@ export default class Daemon extends Character {
         this.defence = 40;
     }
 }
-
-// const Step = new Daemon('Step', 'Daemon')
-// console.log(Step)

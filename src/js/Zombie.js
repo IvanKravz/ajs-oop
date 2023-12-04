@@ -7,6 +7,3 @@ export default class Zombie extends Character {
         this.defence = 10;
     }
 }
-
-// const Vova = new Zombie('Vova', 'Undead')
-// console.log(Vova)
